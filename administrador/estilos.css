@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+.contenedorTabla {
+    overflow-x: auto; /* Permite el scroll horizontal si la tabla es demasiado ancha */
+}
+
+/* Animaciones CSS para el cambio de tabla (agregar a tu gusto) */
+.animacionCambioTabla {
+    animation: cambioTabla 1s ease-in-out;
+}
+
+@keyframes cambioTabla {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
